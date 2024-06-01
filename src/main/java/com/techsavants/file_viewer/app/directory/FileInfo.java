@@ -14,6 +14,8 @@ public class FileInfo {
     private String extension;
     private long size;
     private long lastModified;
+    private String content;
+    private long lastLine;
 
     public FileInfo(Path path, BasicFileAttributes attrs) {
         this.name = path.getFileName().toString();
