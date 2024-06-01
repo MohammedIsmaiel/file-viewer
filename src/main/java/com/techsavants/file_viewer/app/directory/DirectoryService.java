@@ -16,7 +16,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class DirectoryService {
     public List<FileInfo> listFiles(String path) throws IOException {
-        log.debug("reading path: {}", path);
+        log.info("reading path: {}", path);
         Path directory = Paths.get(path);
         if (Files.isDirectory(directory)) {
             return Files.list(directory)
